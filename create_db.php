@@ -1,8 +1,7 @@
-
 <?php
     $server = 'localhost'; // 127.0.0.1
     $username = 'root';
-    $password = 'rootroot';
+    $password = '';
 
     // Open a new connection
     $con = new mysqli($server, $username, $password);
@@ -18,7 +17,7 @@
     $result = $con->query($sql);
 
     if ($result === true) {
-        echo 'Database creation successful';
+        echo 'Database Created Successful';
     } else {
         echo 'Error creating database: ' . $con->error;
     }
